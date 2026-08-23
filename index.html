@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Futurama — каркасні будинки під ключ. Ціна, моделі, терміни</title>
+<meta name="description" content="Каркасні будинки під ключ від Futurama: модельний ряд, ціни, терміни будівництва 90–180 днів. Безкоштовна консультація, фіксований кошторис.">
+<meta name="theme-color" content="#234F3A">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="canonical" href="https://example.github.io/rama-site/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Futurama — каркасні будинки під ключ">
+<meta property="og:description" content="Модельний ряд каркасних будинків, ціни та терміни будівництва 90–180 днів.">
+<meta property="og:image" content="images/cta-house.svg">
+<meta property="og:locale" content="uk_UA">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Перейти до основного контенту</a>
+
+<header class="nav" id="siteNav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="#top" aria-label="Futurama — на початок сторінки">Futur<span>ama</span></a>
+
+    <nav class="nav__links" aria-label="Основна навігація">
+      <a href="#models">Модельний ряд</a>
+      <a href="#technology">Технологія</a>
+      <a href="#process">Процес</a>
+      <a href="#faq">Питання</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+
+    <div class="nav__phone">
+      <span>Безкоштовна консультація</span>
+      <a href="tel:+380000000000">+380 (00) 000-00-00</a>
+    </div>
+
+    <button class="nav__burger" id="burgerBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Відкрити меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#models">Модельний ряд</a>
+    <a href="#technology">Технологія</a>
+    <a href="#process">Процес</a>
+    <a href="#faq">Питання</a>
+    <a href="#contact">Контакти</a>
+    <a class="mobile-menu__phone" href="tel:+380000000000">+380 (00) 000-00-00</a>
+    <a class="mobile-menu__cta" href="#contact">Отримати консультацію</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="container hero__grid">
+      <div class="hero__intro">
+        <p class="eyebrow reveal">Каркасні будинки під ключ</p>
+        <h1 class="hero__title reveal">Дім за <span>90–180 днів</span>, а не за три роки.</h1>
+        <p class="hero__lead reveal">
+          Фіксований кошторис, інженерний проєкт і виробництво на заводі — ви завжди
+          знаєте вартість і дату заїзду ще до старту будівництва.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#models" class="btn btn--primary">Дивитись модельний ряд</a>
+          <a href="#contact" class="btn btn--ghost">Отримати консультацію</a>
+        </div>
+
+        <div class="hero__facts reveal">
+          <div class="hero__fact"><strong>10+</strong><span>років досвіду</span></div>
+          <div class="hero__fact"><strong>120+</strong><span>збудованих будинків</span></div>
+          <div class="hero__fact"><strong>90–180</strong><span>днів будівництва</span></div>
+          <div class="hero__fact"><strong>100%</strong><span>фіксований кошторис</span></div>
+        </div>
+      </div>
+
+      <div class="hero__media reveal">
+        <img src="images/hero-house.jpg" alt="Каркасний будинок Futurama з дерев'яною терасою та панорамним склінням" width="800" height="600" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <!-- MODEL CATALOG -->
+  <section class="catalog" id="models" aria-labelledby="catalogTitle">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal">Модельний ряд</p>
+        <h2 class="section-title reveal" id="catalogTitle">Шість готових моделей. Кожну можна адаптувати під вашу ділянку.</h2>
+        <p class="section-lead reveal">Ціни — орієнтовні, залежать від комплектації та регіону доставки матеріалів.</p>
+      </div>
+
+      <div class="filter-bar reveal" role="group" aria-label="Фільтр моделей за площею">
+        <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">Усі моделі</button>
+        <button type="button" class="filter-btn" data-filter="small" aria-pressed="false">До 70 м²</button>
+        <button type="button" class="filter-btn" data-filter="medium" aria-pressed="false">70–120 м²</button>
+        <button type="button" class="filter-btn" data-filter="large" aria-pressed="false">Понад 120 м²</button>
+      </div>
+
+      <div class="model-grid" id="modelGrid">
+        <article class="model-card reveal" data-size="medium">
+          <div class="model-card__media">
+            <img src="images/project-01.jpg" alt="Модель Сосна — одноповерховий каркасний будинок зі світлим фасадом, кам'яним цоколем і критим ганком" loading="lazy" width="750" height="749">
+          </div>
+          <div class="model-card__body">
+            <h3 class="model-card__name">Сосна</h3>
+            <p style="font-size:0.85rem;color:var(--ink-soft);margin-top:-6px">Світлий одноповерховий будинок з великим фронтальним вікном і критим ганком — спокійна фасадна композиція без зайвих деталей.</p>
+            <div class="model-card__specs">
+              <span>Площа: <b>95 м²</b></span>
+              <span>Кімнати: <b>3</b></span>
+              <span>Термін: <b>100 днів</b></span>
+            </div>
+            <div class="model-card__footer">
+              <div class="model-card__price"><small>Від</small><strong>$33 900</strong></div>
+              <a href="#contact" class="model-card__link" data-model="Сосна">Обговорити →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="model-card reveal" data-size="small">
+          <div class="model-card__media">
+            <img src="images/project-02.jpg" alt="Модель Смерека — дерев'яний А-подібний будиночок серед лісу з теплим освітленням і терасою" loading="lazy" width="720" height="956">
+          </div>
+          <div class="model-card__body">
+            <h3 class="model-card__name">Смерека</h3>
+            <p style="font-size:0.85rem;color:var(--ink-soft);margin-top:-6px">Компактний А-подібний будинок для лісової ділянки чи дачі — суцільний дерев'яний дах-стіна і невелика тераса на вході.</p>
+            <div class="model-card__specs">
+              <span>Площа: <b>55 м²</b></span>
+              <span>Кімнати: <b>2</b></span>
+              <span>Термін: <b>90 днів</b></span>
+            </div>
+            <div class="model-card__footer">
+              <div class="model-card__price"><small>Від</small><strong>$28 600</strong></div>
+              <a href="#contact" class="model-card__link" data-model="Смерека">Обговорити →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="model-card reveal" data-size="medium">
+          <div class="model-card__media">
+            <img src="images/project-03.jpg" alt="Модель Барн — чорний мінімалістичний барнхаус з панорамним фронтоном і великою терасою" loading="lazy" width="666" height="888">
+          </div>
+          <div class="model-card__body">
+            <h3 class="model-card__name">Барн</h3>
+            <p style="font-size:0.85rem;color:var(--ink-soft);margin-top:-6px">Барнхаус із суцільним панорамним фронтоном і темним фасадом — багато світла у вітальні та відкрита тераса на весь фасад.</p>
+            <div class="model-card__specs">
+              <span>Площа: <b>85 м²</b></span>
+              <span>Кімнати: <b>3</b></span>
+              <span>Термін: <b>110 днів</b></span>
+            </div>
+            <div class="model-card__footer">
+              <div class="model-card__price"><small>Від</small><strong>$33 200</strong></div>
+              <a href="#contact" class="model-card__link" data-model="Барн">Обговорити →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="model-card reveal" data-size="large">
+          <div class="model-card__media">
+            <img src="images/project-04.jpg" alt="Модель Кедр — двоповерховий дерев'яний будинок з балконом, мансардним вікном і критою терасою" loading="lazy" width="1024" height="1024">
+          </div>
+          <div class="model-card__body">
+            <h3 class="model-card__name">Кедр</h3>
+            <p style="font-size:0.85rem;color:var(--ink-soft);margin-top:-6px">Родинний двоповерховий будинок у скандинавському стилі: балкон другого поверху, мансардне вікно і крита тераса знизу.</p>
+            <div class="model-card__specs">
+              <span>Площа: <b>145 м²</b></span>
+              <span>Кімнати: <b>5</b></span>
+              <span>Термін: <b>150 днів</b></span>
+            </div>
+            <div class="model-card__footer">
+              <div class="model-card__price"><small>Від</small><strong>$49 300</strong></div>
+              <a href="#contact" class="model-card__link" data-model="Кедр">Обговорити →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="model-card reveal" data-size="medium">
+          <div class="model-card__media">
+            <img src="images/project-05.jpg" alt="Модель Обрій — А-подібний будинок з видовою терасою на даху прибудови та зеленим покриттям даху" loading="lazy" width="720" height="808">
+          </div>
+          <div class="model-card__body">
+            <h3 class="model-card__name">Обрій</h3>
+            <p style="font-size:0.85rem;color:var(--ink-soft);margin-top:-6px">А-подібний будинок з прибудовою і видовою терасою на її даху — рішення для ділянки, де хочеться панорами зверху.</p>
+            <div class="model-card__specs">
+              <span>Площа: <b>78 м²</b></span>
+              <span>Кімнати: <b>3</b></span>
+              <span>Термін: <b>115 днів</b></span>
+            </div>
+            <div class="model-card__footer">
+              <div class="model-card__price"><small>Від</small><strong>$31 200</strong></div>
+              <a href="#contact" class="model-card__link" data-model="Обрій">Обговорити →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVANTAGES -->
+  <section class="advantages" aria-labelledby="advTitle">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal" style="color:#fff">Переваги каркасної технології</p>
+        <h2 class="section-title reveal" id="advTitle" style="color:#fff">У порівнянні з цеглою та піноблоком</h2>
+      </div>
+
+      <div class="advantages__grid">
+        <div class="advantage reveal">
+          <span class="advantage__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9l-2 6-6 2 2-6 6-2z"/></svg>
+          </span>
+          <h3>Індивідуальний проєкт</h3>
+          <p>Плануємо будинок під ваш рельєф, сторони світу і склад сім'ї — а не підганяємо вас під каталожний план.</p>
+        </div>
+        <div class="advantage reveal">
+          <span class="advantage__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M6 20V10l6-5 6 5v10M10 20v-6h4v6"/></svg>
+          </span>
+          <h3>Будь-який тип фундаменту</h3>
+          <p>Каркас легший за муровану стіну, тож підходить і пальовий, і стрічковий фундамент — залежно від ґрунту й бюджету.</p>
+        </div>
+        <div class="advantage reveal">
+          <span class="advantage__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </span>
+          <h3>Термін виробництва — 90–180 днів</h3>
+          <p>Панелі виготовляють на заводі, поки на ділянці готують фундамент — процеси йдуть паралельно, не по черзі.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD BLOCK #1 -->
+  <section class="lead-block">
+    <div class="container">
+      <div class="lead-card reveal">
+        <div class="lead-card__text">
+          <h2>Безкоштовна консультація</h2>
+          <p>Залиште ім'я й телефон — розкажемо про модель, кошторис і терміни під вашу ділянку.</p>
+          <div class="lead-card__badges">
+            <span class="lead-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
+              Відповідь протягом 15 хв
+            </span>
+            <span class="lead-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
+              Консультація безкоштовна
+            </span>
+            <span class="lead-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 6.6L21 10l-5.2 4.3L17.4 21 12 17.3 6.6 21l1.6-6.7L3 10l6.6-1.4L12 2z"/></svg>
+              Порада від інженера, не менеджера
+            </span>
+          </div>
+        </div>
+
+        <form class="mini-form" data-mini-lead>
+          <div class="mini-form__row">
+            <label for="mfName1" class="visually-hidden" style="position:absolute;left:-9999px">Ім'я</label>
+            <input type="text" id="mfName1" name="name" placeholder="Ваше ім'я" required minlength="2" autocomplete="name">
+          </div>
+          <div class="mini-form__row">
+            <label for="mfPhone1" class="visually-hidden" style="position:absolute;left:-9999px">Телефон</label>
+            <input type="tel" id="mfPhone1" name="phone" placeholder="+380 00 000 00 00" required pattern="^[\d\s\+\-\(\)]{7,20}$" autocomplete="tel">
+          </div>
+          <button type="submit" class="btn btn--copper btn--block">Отримати консультацію</button>
+          <p class="mini-form__consent">Надсилаючи форму, ви погоджуєтесь на обробку персональних даних.</p>
+          <p class="mini-form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY FRAME (detailed) -->
+  <section class="why" aria-labelledby="whyTitle">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal">Чому каркас</p>
+        <h2 class="section-title reveal" id="whyTitle">Технологія, прорахована інженерно — не спрощена</h2>
+      </div>
+
+      <div class="why__list">
+        <div class="why__row reveal">
+          <span class="why__index">01</span>
+          <h3 class="why__title">Швидкість без поспіху</h3>
+          <p class="why__text">Панелі виготовляють на виробництві, поки на майданчику готують фундамент — два процеси йдуть паралельно.</p>
+        </div>
+        <div class="why__row reveal">
+          <span class="why__index">02</span>
+          <h3 class="why__title">Енергоефективність за замовчуванням</h3>
+          <p class="why__text">Товщина й безперервність утеплення прораховані ще на етапі проєкту — дім тримає тепло без компромісів.</p>
+        </div>
+        <div class="why__row reveal">
+          <span class="why__index">03</span>
+          <h3 class="why__title">Точність виробництва</h3>
+          <p class="why__text">Кожен елемент каркаса вирізаний на верстаті за кресленням — без похибки «на око».</p>
+        </div>
+        <div class="why__row reveal">
+          <span class="why__index">04</span>
+          <h3 class="why__title">Контроль матеріалів</h3>
+          <p class="why__text">Деревина, утеплювач і мембрани мають партію, сертифікат і вологість, зафіксовані до монтажу.</p>
+        </div>
+        <div class="why__row reveal">
+          <span class="why__index">05</span>
+          <h3 class="why__title">Бюджет, який не рухається</h3>
+          <p class="why__text">Кошторис фіксується після проєктування — усі матеріали й обсяги вже прораховані, без «доборів».</p>
+        </div>
+        <div class="why__row reveal">
+          <span class="why__index">06</span>
+          <h3 class="why__title">Простір, що адаптується</h3>
+          <p class="why__text">Внутрішні перегородки не несучі — планування можна змінити навіть через десять років життя в домі.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERIALS / WALL SECTION -->
+  <section class="materials" id="technology" aria-labelledby="materialsTitle">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal">Конструкція</p>
+        <h2 class="section-title reveal" id="materialsTitle">Розріз стіни — з чого насправді складається дім</h2>
+        <p class="section-lead reveal">Оберіть шар на схемі, щоб дізнатись, з чого він складається та навіщо потрібен.</p>
+      </div>
+
+      <div class="wall-interactive reveal">
+        <div class="wall-interactive__diagram">
+          <object type="image/svg+xml" data="images/wall-section.svg" id="wallDiagram" width="900" height="700"
+                  aria-label="Схема розрізу стіни каркасного будинку з п'ятьма шарами: фасад, утеплення, каркас, пароізоляція, внутрішнє оздоблення">
+            <img src="images/wall-section.svg" alt="Схема розрізу стіни каркасного будинку з п'ятьма шарами">
+          </object>
+        </div>
+
+        <div class="wall-interactive__panel" id="wallPanel" aria-live="polite">
+          <span class="wall-interactive__hint" id="wallHint">Натисніть на шар зліва, щоб дізнатися більше</span>
+
+          <div class="wall-layer-info" data-layer="render" hidden>
+            <span class="wall-layer-info__index">Шар 01</span>
+            <h3>Штукатурка по утеплювачу</h3>
+            <p>Мінеральна або силіконова штукатурка поверх зовнішнього утеплення — захищає фасад від вологи й УФ, лишаючись паропроникною.</p>
+          </div>
+          <div class="wall-layer-info" data-layer="insulation" hidden>
+            <span class="wall-layer-info__index">Шар 02</span>
+            <h3>Плита утеплювача</h3>
+            <p>Суцільний зовнішній контур утеплення (EPS/XPS) без розривів — саме він прибирає містки холоду між поверхами й кутами.</p>
+          </div>
+          <div class="wall-layer-info" data-layer="sheathing" hidden>
+            <span class="wall-layer-info__index">Шар 03</span>
+            <h3>Плита зовнішньої обшивки</h3>
+            <p>OSB або цементно-стружкова плита — надає каркасу жорсткість і є основою для кріплення утеплення й фасаду.</p>
+          </div>
+          <div class="wall-layer-info" data-layer="frame" hidden>
+            <span class="wall-layer-info__index">Шар 04</span>
+            <h3>Каркас і мінеральна вата</h3>
+            <p>Сухі стійки каркаса з мінеральною ватою між ними — несуча конструкція стіни й основний тепловий бар'єр одночасно.</p>
+          </div>
+          <div class="wall-layer-info" data-layer="vapor" hidden>
+            <span class="wall-layer-info__index">Шар 05</span>
+            <h3>Пароізоляція</h3>
+            <p>Суцільна мембрана без розривів — визначає, чи протримається утеплювач сухим наступні тридцять років.</p>
+          </div>
+          <div class="wall-layer-info" data-layer="interior" hidden>
+            <span class="wall-layer-info__index">Шар 06</span>
+            <h3>Внутрішнє оздоблення</h3>
+            <p>Гіпсокартон, дерев'яна вагонка або мікроцемент — фінішний шар, готовий під фарбування чи чисте оздоблення.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline" id="process" aria-labelledby="timelineTitle">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal">Шлях клієнта</p>
+        <h2 class="section-title reveal" id="timelineTitle">Ви завжди знаєте, на якому ви етапі</h2>
+      </div>
+
+      <ol class="timeline__list">
+        <li class="timeline__item reveal"><span class="timeline__num">01</span><div><h3>Знайомство</h3><p>Обговорюємо ділянку, бюджет і те, яким має бути ваше життя в новому домі.</p></div></li>
+        <li class="timeline__item reveal"><span class="timeline__num">02</span><div><h3>Проєкт</h3><p>Архітектурне й конструктивне рішення, узгоджене з вами до останньої деталі.</p></div></li>
+        <li class="timeline__item reveal"><span class="timeline__num">03</span><div><h3>Кошторис</h3><p>Фіксована вартість без прихованих статей — ви бачите, за що платите.</p></div></li>
+        <li class="timeline__item reveal"><span class="timeline__num">04</span><div><h3>Виробництво</h3><p>Каркасні панелі виготовляють на заводі, поки триває підготовка ділянки.</p></div></li>
+        <li class="timeline__item reveal"><span class="timeline__num">05</span><div><h3>Монтаж</h3><p>Збірка каркаса на фундаменті — дні, а не місяці, завдяки заводській точності.</p></div></li>
+        <li class="timeline__item reveal"><span class="timeline__num">06</span><div><h3>Інженерія</h3><p>Електрика, вентиляція, опалення — прокладені й перевірені до закриття стін.</p></div></li>
+        <li class="timeline__item reveal"><span class="timeline__num">07</span><div><h3>Фасад</h3><p>Зовнішнє оздоблення, вікна, покрівля — дім набуває остаточного вигляду.</p></div></li>
+        <li class="timeline__item reveal"><span class="timeline__num">08</span><div><h3>Передача ключів</h3><p>Фінальна перевірка разом із вами — і дім, готовий до заселення.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- LEAD BLOCK #2 -->
+  <section class="lead-block" style="padding-top:0">
+    <div class="container">
+      <div class="lead-card reveal">
+        <div class="lead-card__text">
+          <h2>Ще не обрали модель?</h2>
+          <p>Розкажіть про площу й бюджет — підберемо готову модель або запропонуємо індивідуальний проєкт.</p>
+        </div>
+        <form class="mini-form" data-mini-lead>
+          <div class="mini-form__row">
+            <input type="text" name="name" placeholder="Ваше ім'я" required minlength="2" autocomplete="name" aria-label="Ім'я">
+          </div>
+          <div class="mini-form__row">
+            <input type="tel" name="phone" placeholder="+380 00 000 00 00" required pattern="^[\d\s\+\-\(\)]{7,20}$" autocomplete="tel" aria-label="Телефон">
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">Підібрати модель</button>
+          <p class="mini-form__consent">Надсилаючи форму, ви погоджуєтесь на обробку персональних даних.</p>
+          <p class="mini-form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faqTitle">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal">Часті питання</p>
+        <h2 class="section-title reveal" id="faqTitle">Що варто знати перед замовленням</h2>
+      </div>
+
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            Скільки коштує каркасний будинок за м²?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer"><p>Орієнтовно від $310 за м² під ключ. Кінцева вартість залежить від комплектації, поверховості та регіону доставки матеріалів — точний кошторис готуємо після безкоштовної консультації.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            У чому різниця між каркасним і модульним будинком?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer"><p>Модульний будинок повністю збирають на заводі й привозять готовим блоком. Каркасний — панелі виготовляють на виробництві, а монтаж і фінальне оздоблення відбуваються на вашій ділянці, що дає більше свободи в плануванні та розмірах.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            Чи не замерзну я взимку в каркасному будинку?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer"><p>Ні. Товщина утеплення розраховується під кліматичну зону вашої ділянки ще на етапі проєкту, а суцільна пароізоляція виключає містки холоду.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            Чи потрібен дозвіл на будівництво?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer"><p>Так, каркасний будинок — капітальна споруда, і на нього оформлюється дозвільна документація так само, як на цегляний чи блоковий будинок. Ми допомагаємо підготувати потрібні документи.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            Яка деревина використовується для каркаса?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer"><p>Суха деревина камерного сушіння, профільована з чотирьох боків для точної геометрії. Вологість і партія кожної поставки фіксуються до монтажу.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            Чи можна змінити планування вже готового проєкту?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer"><p>Так. Кожна модель у каталозі — відправна точка: розташування перегородок, кількість кімнат і розмір скління можна адаптувати під ваші потреби без зміни ціни за м².</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            Скільки триває будівництво?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer"><p>Від 90 до 180 днів залежно від площі й комплектації — від підписання договору до передачі ключів. Виробництво панелей і підготовка фундаменту йдуть паралельно.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            Чи входить внутрішнє оздоблення в базову ціну?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer"><p>Базова комплектація включає чорнове оздоблення, готове під фарбування. Повне «під ключ» оздоблення — окрема опція, яку прораховуємо в кошторисі після вибору матеріалів.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="final-cta__image" aria-hidden="true">
+      <img src="images/cta-house.svg" alt="" loading="lazy" width="1600" height="1000">
+    </div>
+    <div class="final-cta__scrim" aria-hidden="true"></div>
+    <div class="final-cta__content container">
+      <h2 class="reveal">Можливо, ваш дім<br> уже проєктується.<br> Питання лише — чий він.</h2>
+      <a href="#contact" class="btn btn--copper reveal">Розпочати проєкт</a>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="contact" id="contact" aria-labelledby="contactTitle">
+    <div class="container contact__grid">
+      <div class="contact__intro">
+        <p class="eyebrow reveal">Контакти</p>
+        <h2 class="section-title reveal" id="contactTitle">Розкажіть про ділянку — ми повернемось із першими ідеями</h2>
+        <p class="section-lead reveal">Відповідаємо протягом одного робочого дня. Консультація нічого не коштує й ні до чого не зобов'язує.</p>
+
+        <dl class="contact__details reveal">
+          <div><dt>Телефон</dt><dd><a href="tel:+380000000000">+380 (00) 000-00-00</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:hello@futurama.example">hello@futurama.example</a></dd></div>
+        </dl>
+      </div>
+
+      <form class="form" id="contactForm" novalidate>
+        <div class="form__row">
+          <label for="fName">Ім'я</label>
+          <input type="text" id="fName" name="name" autocomplete="name" required minlength="2">
+          <span class="form__error" id="err-name" role="alert"></span>
+        </div>
+
+        <div class="form__row">
+          <label for="fPhone">Телефон</label>
+          <input type="tel" id="fPhone" name="phone" autocomplete="tel" required
+                 pattern="^[\d\s\+\-\(\)]{7,20}$" placeholder="+380 00 000 00 00">
+          <span class="form__error" id="err-phone" role="alert"></span>
+        </div>
+
+        <div class="form__row">
+          <label for="fType">Модель / тип будинку</label>
+          <select id="fType" name="houseType" required>
+            <option value="" disabled selected>Оберіть модель</option>
+            <option value="Сосна">Сосна — 95 м²</option>
+            <option value="Смерека">Смерека — 55 м²</option>
+            <option value="Барн">Барн — 85 м²</option>
+            <option value="Кедр">Кедр — 145 м²</option>
+            <option value="Обрій">Обрій — 78 м²</option>
+            <option value="not-decided">Ще не визначився(-лась)</option>
+          </select>
+          <span class="form__error" id="err-type" role="alert"></span>
+        </div>
+
+        <div class="form__row">
+          <label for="fArea">Орієнтовна площа, м²</label>
+          <input type="number" id="fArea" name="area" min="20" max="1000" inputmode="numeric" placeholder="Напр. 150">
+          <span class="form__error" id="err-area" role="alert"></span>
+        </div>
+
+        <div class="form__row form__row--full">
+          <label for="fComment">Коментар</label>
+          <textarea id="fComment" name="comment" rows="4" maxlength="600" placeholder="Розкажіть про ділянку, терміни або побажання"></textarea>
+        </div>
+
+        <div class="form__row form__row--full">
+          <button type="submit" class="btn btn--primary btn--block" id="formSubmit">
+            <span class="btn__label">Обговорити проєкт</span>
+          </button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="#top" class="nav__logo">Futur<span>ama</span></a>
+      <p>Каркасні будинки під ключ: від проєкту до передачі ключів.</p>
+      <div class="footer__social">
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+        <a href="https://t.me/" target="_blank" rel="noopener noreferrer" aria-label="Telegram">TG</a>
+        <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h3>Модельний ряд</h3>
+      <a href="#models">Сосна — 95 м²</a>
+      <a href="#models">Смерека — 55 м²</a>
+      <a href="#models">Барн — 85 м²</a>
+      <a href="#models">Кедр — 145 м²</a>
+      <a href="#models">Обрій — 78 м²</a>
+    </div>
+
+    <div class="footer__col">
+      <h3>Про нас</h3>
+      <a href="#technology">Технологія</a>
+      <a href="#process">Процес будівництва</a>
+      <a href="#faq">Часті питання</a>
+      <a href="#contact">Контакти</a>
+    </div>
+
+    <div class="footer__col">
+      <h3>Контакти</h3>
+      <a href="tel:+380000000000">+380 (00) 000-00-00</a>
+      <a href="mailto:hello@futurama.example">hello@futurama.example</a>
+      <span>м. Київ, Україна</span>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <p>© <span id="year"></span> Futurama. Усі права захищено.</p>
+    <p>Інформація на сайті має ознайомчий характер і може відрізнятися від дійсності.</p>
+  </div>
+</footer>
+
+<!-- STICKY QUICK-ORDER WIDGET -->
+<aside class="quick-order" id="quickOrder" aria-label="Швидка заявка на консультацію">
+  <button type="button" class="quick-order__close" id="quickOrderClose" aria-label="Закрити">✕</button>
+  <p class="quick-order__title">Безкоштовна консультація</p>
+  <p class="quick-order__sub">Залиште телефон — зателефонуємо протягом 15 хв</p>
+  <form class="mini-form" data-mini-lead>
+    <div class="mini-form__row">
+      <input type="text" name="name" placeholder="Ім'я" required minlength="2" autocomplete="name" aria-label="Ім'я">
+    </div>
+    <div class="mini-form__row">
+      <input type="tel" name="phone" placeholder="Телефон" required pattern="^[\d\s\+\-\(\)]{7,20}$" autocomplete="tel" aria-label="Телефон">
+    </div>
+    <button type="submit" class="btn btn--copper btn--block">Замовити дзвінок</button>
+    <p class="mini-form__status" role="status" aria-live="polite"></p>
+  </form>
+</aside>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

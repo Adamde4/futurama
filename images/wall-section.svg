@@ -1,0 +1,91 @@
+<svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="wallTitle" id="wallSection">
+  <title id="wallTitle">Розріз стіни каркасного будинку: штукатурка, утеплення, зовнішня обшивка, каркас з мінеральною ватою, пароізоляція, внутрішнє оздоблення</title>
+  <style>
+    .wall-layer { transition: opacity 0.4s cubic-bezier(0.16,1,0.3,1); cursor: pointer; }
+    svg.has-active .wall-layer { opacity: 0.3; }
+    svg.has-active .wall-layer.is-active { opacity: 1; }
+  </style>
+  <rect x="0" y="0" width="1000" height="700" fill="none"/>
+
+  <!-- 1. Render / plaster over insulation -->
+  <g id="layer-render" class="wall-layer" tabindex="0" role="button" aria-pressed="false" aria-label="Шар: штукатурка по утеплювачу">
+    <rect x="60" y="60" width="35" height="580" fill="#E6EFE9"/>
+    <g stroke="#2F6B4F" stroke-width="0.8" opacity="0.5">
+      <line x1="60" y1="120" x2="95" y2="120"/>
+      <line x1="60" y1="240" x2="95" y2="240"/>
+      <line x1="60" y1="360" x2="95" y2="360"/>
+      <line x1="60" y1="480" x2="95" y2="480"/>
+      <line x1="60" y1="600" x2="95" y2="600"/>
+    </g>
+  </g>
+
+  <!-- 2. Continuous exterior insulation board (EPS/XPS) -->
+  <g id="layer-insulation" class="wall-layer" tabindex="0" role="button" aria-pressed="false" aria-label="Шар: плита утеплювача">
+    <rect x="95" y="60" width="80" height="580" fill="#F3E6D9"/>
+    <g stroke="#B9773F" stroke-width="1.2" opacity="0.6">
+      <line x1="95" y1="100" x2="175" y2="100"/>
+      <line x1="95" y1="180" x2="175" y2="180"/>
+      <line x1="95" y1="260" x2="175" y2="260"/>
+      <line x1="95" y1="340" x2="175" y2="340"/>
+      <line x1="95" y1="420" x2="175" y2="420"/>
+      <line x1="95" y1="500" x2="175" y2="500"/>
+      <line x1="95" y1="580" x2="175" y2="580"/>
+    </g>
+  </g>
+
+  <!-- 3. Exterior sheathing board -->
+  <g id="layer-sheathing" class="wall-layer" tabindex="0" role="button" aria-pressed="false" aria-label="Шар: плита зовнішньої обшивки">
+    <rect x="175" y="60" width="34" height="580" fill="#C9A876"/>
+    <g stroke="#8C6A42" stroke-width="0.6" opacity="0.5">
+      <line x1="175" y1="150" x2="209" y2="150"/>
+      <line x1="175" y1="300" x2="209" y2="300"/>
+      <line x1="175" y1="450" x2="209" y2="450"/>
+      <line x1="175" y1="580" x2="209" y2="580"/>
+    </g>
+  </g>
+
+  <!-- 4. Frame + mineral wool (structural cavity) -->
+  <g id="layer-frame" class="wall-layer" tabindex="0" role="button" aria-pressed="false" aria-label="Шар: каркас і мінеральна вата">
+    <rect x="209" y="60" width="220" height="580" fill="#EFEBE1"/>
+    <g stroke="#B9773F" stroke-width="1.3" opacity="0.65" fill="none">
+      <path d="M225 90 q14 18 0 36 q-14 18 0 36 q14 18 0 36 q-14 18 0 36 q14 18 0 36 q-14 18 0 36 q14 18 0 36 q-14 18 0 36 q14 18 0 36 q-14 18 0 36 q14 18 0 36"/>
+      <path d="M275 90 q14 18 0 36 q-14 18 0 36 q14 18 0 36 q-14 18 0 36 q14 18 0 36 q-14 18 0 36 q14 18 0 36 q-14 18 0 36 q14 18 0 36 q-14 18 0 36 q14 18 0 36"/>
+      <path d="M325 90 q14 18 0 36 q-14 18 0 36 q14 18 0 36 q-14 18 0 36 q14 18 0 36 q-14 18 0 36 q14 18 0 36 q-14 18 0 36 q14 18 0 36 q-14 18 0 36 q14 18 0 36"/>
+      <path d="M375 90 q14 18 0 36 q-14 18 0 36 q14 18 0 36 q-14 18 0 36 q14 18 0 36 q-14 18 0 36 q14 18 0 36 q-14 18 0 36 q14 18 0 36 q-14 18 0 36 q14 18 0 36"/>
+    </g>
+    <g stroke="#234F3A" stroke-width="6" fill="none">
+      <rect x="215" y="76" width="26" height="548"/>
+      <rect x="290" y="76" width="26" height="548"/>
+      <rect x="403" y="76" width="26" height="548"/>
+      <line x1="215" y1="260" x2="429" y2="260"/>
+      <line x1="215" y1="440" x2="429" y2="440"/>
+    </g>
+  </g>
+
+  <!-- 5. Vapor barrier -->
+  <g id="layer-vapor" class="wall-layer" tabindex="0" role="button" aria-pressed="false" aria-label="Шар: пароізоляція">
+    <rect x="429" y="60" width="22" height="580" fill="#2F6B4F" opacity="0.5"/>
+    <g stroke="#E6EFE9" stroke-width="1" stroke-dasharray="2 6" opacity="0.9">
+      <line x1="440" y1="70" x2="440" y2="630"/>
+    </g>
+  </g>
+
+  <!-- 6. Interior finish -->
+  <g id="layer-interior" class="wall-layer" tabindex="0" role="button" aria-pressed="false" aria-label="Шар: внутрішнє оздоблення">
+    <rect x="451" y="60" width="55" height="580" fill="#FBFAF7"/>
+    <g stroke="#1E2A22" stroke-width="0.7" opacity="0.3">
+      <line x1="451" y1="200" x2="506" y2="200"/>
+      <line x1="451" y1="400" x2="506" y2="400"/>
+      <line x1="451" y1="580" x2="506" y2="580"/>
+    </g>
+  </g>
+
+  <line x1="60" y1="60" x2="506" y2="60" stroke="#1E2A22" stroke-width="1"/>
+  <line x1="60" y1="640" x2="506" y2="640" stroke="#1E2A22" stroke-width="1"/>
+
+  <!-- room-side hint: simple interior corner motif to give the section context -->
+  <g stroke="#1E2A22" stroke-width="1" opacity="0.15" fill="none">
+    <line x1="560" y1="640" x2="960" y2="640"/>
+    <line x1="560" y1="640" x2="560" y2="120"/>
+  </g>
+</svg>
