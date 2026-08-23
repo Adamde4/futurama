@@ -292,7 +292,15 @@ button { font-family: inherit; }
    ============================================================ */
 .materials { padding: clamp(60px, 8vw, 110px) 0; background: var(--surface); }
 .wall-interactive { display: grid; grid-template-columns: 1fr; gap: 32px; align-items: start; }
-.wall-interactive__diagram { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius-m); padding: 20px; }
+.wall-interactive__diagram { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius-m); padding: 20px; max-width: 100%; overflow: hidden; }
+.wall-interactive__diagram object,
+.wall-interactive__diagram img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 900 / 700;
+}
 .wall-layer { cursor: pointer; }
 svg.has-active .wall-layer { opacity: 0.32; }
 svg.has-active .wall-layer.is-active { opacity: 1; }
