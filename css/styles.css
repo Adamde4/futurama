@@ -281,11 +281,14 @@ button { font-family: inherit; }
    ============================================================ */
 .why { padding: clamp(60px, 8vw, 110px) 0; background: var(--bg); }
 .why__list { border-top: 1px solid var(--line); }
-.why__row { display: grid; grid-template-columns: 56px 1fr; gap: 18px; padding: 24px 0; border-bottom: 1px solid var(--line); }
-.why__index { font-family: var(--font-display); color: var(--copper); font-weight: 700; }
-.why__title { font-size: 1.1rem; margin-bottom: 6px; }
-.why__text { color: var(--ink-soft); max-width: 62ch; font-size: 0.95rem; }
-@media (min-width: 760px) { .why__row { grid-template-columns: 70px 260px 1fr; align-items: baseline; } }
+.why__row { display: grid; grid-template-columns: 1fr; gap: 4px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+.why__index { font-family: var(--font-display); color: var(--copper); font-weight: 700; grid-column: 1; }
+.why__title { font-size: 1.1rem; margin: 4px 0 6px; grid-column: 1; }
+.why__text { color: var(--ink-soft); max-width: 62ch; font-size: 0.95rem; grid-column: 1; }
+@media (min-width: 760px) {
+  .why__row { grid-template-columns: 70px 260px 1fr; gap: 18px; align-items: baseline; }
+  .why__index, .why__title, .why__text { grid-column: auto; margin: 0; }
+}
 
 /* ============================================================
    Materials / wall interactive (kept, retinted)
